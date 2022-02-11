@@ -12,6 +12,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@babel/core": "7.17.2",
+    "babel-preset-gatsby": "^2.7.0",
     "gatsby": "^4.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
