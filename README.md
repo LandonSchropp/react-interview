@@ -1,54 +1,36 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# React Interview Problem
 
-## 🚀 Quick start
+This is my personal React development environment for interview problems.
 
-1.  **Create a Gatsby site.**
+It uses several tools to make development simple and easy.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+* [React](https://reactjs.org/): A great frontend UI framework.
+* [Gatsby](https://www.gatsbyjs.com/): Gatsby is an platform for building static sites and
+  single-page applications with React.
+* [Babel](https://babeljs.io/): Babel is a transpiler that allows us to write modern JavaScript
+  without waiting for browsers to implement new features.
+* [ESLint](https://eslint.org/): ESLint is a static analysis tool that fixes problems and maintains
+  code standards. This project uses my [personal ESLint configuration](https://bit.ly/3nTK58a).
+* [Jest](https://jestjs.io/): Jest is an awesome testing library that makes JavaScript testing easy.
+* [TypeScript Language Server](https://bit.ly/3rH7bkK): Even though the project is written in
+  JavaScript and not TypeScript, the TypeScript Language Server still provides many useful
+  niceties.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Setup
 
-2.  **Start developing.**
+This project uses Yarn to manage dependencies. In order to run the code, you'll first install them.
 
-    Navigate into your new site’s directory and start it up.
+``` bash
+yarn install
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Running the Application
 
-3.  **Open the code and start customizing!**
+To run the project's tests, you can use Yarn.
 
-    Your site is now running at http://localhost:8000!
+``` bash
+yarn test
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+The appliation can be run with `yarn develop`, and can be accessed on
+[localhost:8000](http://localhost:8000) by default.
