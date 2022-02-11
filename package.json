@@ -1,12 +1,9 @@
 {
   "name": "react-interview",
-  "version": "1.0.0",
+  "description": "My personal React environment for interview problems",
+  "author": "Landon Schropp <schroppl@gmail.com>",
   "private": true,
-  "description": "React Interview",
-  "author": "Landon Schropp",
-  "keywords": [
-    "gatsby"
-  ],
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
