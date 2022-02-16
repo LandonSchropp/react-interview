@@ -27,19 +27,6 @@ export function Calculator() {
   let [ operator, setOperator ] = useState(null);
   let [ result, setResult ] = useState(0);
 
-  function applyPreviousOperation() {
-    setValue(0);
-
-    switch (operator) {
-      case "+":
-        return setResult(result + value);
-      case "-":
-        return setResult(result - value);
-      default:
-        return setResult(value);
-    }
-  }
-
   return (
     <div id="container">
       <p
@@ -52,20 +39,23 @@ export function Calculator() {
 
       <div id="buttons">
         { /* N U M B E R S */ }
-        { [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ].map((digit) =>
-          <button
-            className="squareButton"
-            type="button"
-            onClick={ () => { setValue(value * 10 + digit); } }
-            key={ digit }
-          >
-            { digit }
-          </button>) }
+        {
+          [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ].map((digit) =>
+            <button
+              className="squareButton"
+              type="button"
+              onClick={ () => { setValue(value * 10 + digit); } }
+              key={ digit }
+            >
+              { digit }
+            </button>)
+        }
         <button
           type="button"
           onClick={ () => {
-            applyPreviousOperation();
+            setResult(value);
             setOperator("+");
+            setValue(0);
           } }
           className="squareButton actionButton"
         >
@@ -74,8 +64,9 @@ export function Calculator() {
         <button
           type="button"
           onClick={ () => {
-            applyPreviousOperation();
+            setResult(value);
             setOperator("-");
+            setValue(0);
           } }
           className="squareButton actionButton"
         >
@@ -84,8 +75,8 @@ export function Calculator() {
         <button
           type="button"
           onClick={ () => {
-            applyPreviousOperation();
-            setOperator(null);
+            setResult(result + (operator === "+" ? value : -value));
+            setValue(0);
           } }
           className="squareButton"
         >
