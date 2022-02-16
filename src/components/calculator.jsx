@@ -45,6 +45,7 @@ export function Calculator() {
       <p
         id="display"
         style={ { backgroundColor: value ? "lightblue" : "lightgray" } }
+        data-test-id="display"
       >
         { value || result }
       </p>
