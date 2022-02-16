@@ -1,5 +1,9 @@
+import "../stylesheets/index.css";
+
 import React from "react";
 
+import { Calculator } from "../components/calculator";
+
 export default function IndexPage() {
-  return <h1>Todo</h1>;
+  return <Calculator />;
 }
